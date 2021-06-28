@@ -5,3 +5,46 @@
 .link_hover_border_bottom:hover{
     @apply border-b-2;
 }
+
+.link_hover_border_bottom_transition_border{
+    display: inline-block;
+    text-decoration: none;
+}
+.link_hover_border_bottom_transition_border:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 8px;
+    margin-top: -6px;
+    @apply bg-green;
+    transition: width .3s;
+}
+.link_hover_border_bottom_transition_border:hover::after {
+    width: 100%;
+}
+
+.is-fadeout{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-in 300ms, opacity 300ms;
+}
+.is-open{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s ease-out 0s, opacity 300ms;
+}
+
+/* text utils */
+.text-underline-bold{
+    @apply border-b-8 border-green;
+}
+.name-with-underline-full{
+    display: inline-block !important;
+}
+.name-with-underline-full::after{
+    content: '';
+    display: block !important;
+    margin-top: -15px;
+    height: 12px;
+    @apply bg-green;
+}

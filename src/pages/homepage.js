@@ -1,6 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
-import logoHelpdesk from '../assets/images/logo_helpdesk.png';
+
 import wave1 from '../assets/images/wave1.png';
 import wave2 from '../assets/images/wave2.png';
 import {ReactComponent as Blob} from '../assets/images/blob.svg';
@@ -40,7 +39,7 @@ import client15 from '../assets/images/client-15.png';
 export default function Homepage() {
     return (
         <div>
-            <main>
+            <main className="z-50 pt-32">
                 <div className="jumbotron_homepage flex flex-col-reverse lg:flex-row items-center container mx-auto px-12 lg:px-20">
                 <div className="w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 absolute top-0 right-0" style={{zIndex: -10}}>
                     <img src={wave1} alt="Wave one" draggable="false" />
@@ -201,34 +200,34 @@ export default function Homepage() {
                     <h2 className="text-3xl text-center font-bold text-gray-800 max-w-2xl mx-auto">Benefits of Moobidesk</h2>
                     <p className="mt-4 max-w-xl leading-relaxed text-gray-400 mx-auto text-center">What you can expect from our contact center and engagement platform</p>
                     <div className="mt-10 flex flex-col lg:flex-row">
-                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
+                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-0 lg:mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon1 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Improved agent efficiency and experience</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">With the integration of multiple channels into one contact center platform, your customer service agents can create consumer-centric experiences and keep track of customer information and respond to customer queries across channels quickly, accurately and easily.</p>
                         </div>
-                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
+                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-0 lg:mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon2 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Reduce average handling time</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">A fast response makes customers feel important. Moobidesk Enterprise contact center solution analyses the incoming message and automatically suggests the best responses to the agents, removing the potential for human error and allowing agents to focus on assisting customers and respond quickly to customer issues.</p>
                         </div>
-                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
+                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-0 lg:mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon3 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Improved agent efficiency and experience</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">An individual customer’s data from any channel they have used is automatically stored on the same interface and database. It makes the customer experience a great one, as it eliminates the need for the customer to repeat information that has been mentioned before.</p>
                         </div>
                     </div>
                     <div className="mt-2 lg:mt-10 flex flex-col lg:flex-row">
-                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
+                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-0 lg:mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon4 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Significant cost savings</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">Moobidesk bot can help you to save on customer service costs by speeding up response times, freeing up agents for more challenging work, and answering up to 80% of routine questions.</p>
                         </div>
-                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
+                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-0 lg:mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon5 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">High levels of scalablilty, reliablility and availablity</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">Moobidesk Enterprise is a cloud contact center software built on a highly secure, scalable infrastructure and our elasticity allows you to seamlessly grow from 50 agents to 200 agents instantly.</p>
                         </div>
-                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
+                        <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-0 lg:mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon6 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Improved agent efficiency and experience</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">By streamlining and automating your support process means fewer repeat calls, shorter call times, and quick problem resolution, all contributing to increased support efficiency and the lowering of customer care costs.</p>
@@ -285,80 +284,6 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-                <footer className="container mx-auto">
-                    <div className="flex flex-col lg:flex-row">
-                        <div className="w-full lg:w-1/3 px-8">
-                            <img src={logoHelpdesk} alt="" width="300" />
-                            <h2 className="text-gray-400 leading-relaxed mt-4 text-lg tracking-wide">
-                                HelpDesk making businesses flow as we empower and automate your sales through technology and education.
-                            </h2>
-                            <div className="flex flex-row items-center mt-6">
-                                <Link to="/z" className="mr-4"><i class="fab fa-facebook-square text-4xl text-green"></i></Link>
-                                <Link to="/" className="mr-4"><i class="fab fa-instagram text-4xl text-green"></i></Link>
-                                <Link to="/" className="mr-4"><i class="fab fa-twitter text-4xl text-green"></i></Link>
-                                <Link to="/" className="mr-4"><i class="fab fa-linkedin text-4xl text-green"></i></Link>
-                            </div>
-                        </div>
-                        <div className="w-full px-8 lg:w-1/3">
-                            <h2 className="text-white mt-4 text-2xl font-bold">
-                                Newsletter
-                            </h2>
-                            <h2 className="text-green leading-relaxed mt-4 text-lg font-bold">
-                                Subscribe to our Newsletter
-                            </h2>
-                            <form action="#" className="mt-6">
-                                <div className="flex items-center mb-4">
-                                    <label htmlFor="name" className="text-xl text-green font-bold mr-8">Name <span className="text-red-400">*</span></label>
-                                    <input type="text" className="border-t-0 border-b-2 border-green px-2 py-2 rounded focus:outline-none focus:bg-gray-500 transition-all duration-300 text-gray-800 text-lg tracking-wide"/>
-                                </div>
-                                <div className="flex items-center">
-                                    <label htmlFor="email" className="text-xl text-green font-bold mr-8">Email <span className="text-red-400">*</span></label>
-                                    <input type="email" className="border-t-0 border-b-2 border-green px-2 py-2 rounded focus:outline-none focus:bg-gray-500 transition-all duration-300 text-gray-800 text-lg tracking-wide"/>
-                                </div>
-                                <div className="text-center mt-8">
-                                    <button className="px-4 py-2 rounded-3xl text-white bg-green hover:bg-green-600 transition-all duration-200">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div className="w-full lg:w-1/3">
-                                <ul className="mt-6 text-base lg:text-xl ml-8 lg:ml-16 leading-loose text-green font-bold">
-                                    <li className="">
-                                        <Link to="/" className="link_hover_border_bottom ">ABOUT</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">BLOG</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">SUCCESS STORIES</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">CONTACT</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">PRIVACY POLICY</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">TERM OF SERVICE</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">CRM</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">AUTOMATION</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">TRAINING</Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/" className="link_hover_border_bottom">USER GUIDE</Link>
-                                    </li>
-                                </ul>
-                        </div>
-                    </div>
-                    <div className="footer_copyright container mx-auto mt-8 px-8 py-6 text-gray-400">
-                        Copyright © 2020 HelpDesk Pte Ltd. All rights reserved.
-                    </div>
-                </footer>
             </main>
         </div>
     )
