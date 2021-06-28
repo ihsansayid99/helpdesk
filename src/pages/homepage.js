@@ -41,7 +41,7 @@ export default function Homepage() {
     return (
         <div>
             <main>
-                <div className="jumbotron_homepage flex flex-col-reverse lg:flex-row items-center container mx-auto px-20">
+                <div className="jumbotron_homepage flex flex-col-reverse lg:flex-row items-center container mx-auto px-12 lg:px-20">
                 <div className="w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 absolute top-0 right-0" style={{zIndex: -10}}>
                     <img src={wave1} alt="Wave one" draggable="false" />
                 </div>
@@ -49,7 +49,7 @@ export default function Homepage() {
                     <img src={wave2} alt="Wave one" draggable="false" />
                 </div>
                 <div className="w-full lg:w-1/2">
-                    <h1 className="text-4xl font-bold leading-tight max-w-xl">Smart Customer Engagement Solution For The Modern Enterprise In Singapore</h1>
+                    <h1 className="text-3xl lg:text-4xl font-bold leading-tight max-w-xl">Smart Customer Engagement Solution For The Modern Enterprise In Singapore</h1>
                     <p className="mt-4 max-w-xl leading-relaxed text-gray-400">Designed to help businesses deliver a seamless and immersive customer experience through a unified platform.</p>
                 </div>
                 <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
@@ -98,7 +98,7 @@ export default function Homepage() {
                     </div>
                 </div>
                 </div>
-                <div className="power-simplicity container mx-auto px-8 mt-48">
+                <div className="power-simplicity container mx-auto px-8 mt-24 lg:mt-48">
                 <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">Engagement Solution</h5>
                 <h2 className="text-3xl text-center font-bold text-gray-800 max-w-2xl mx-auto">Why successful businesses adopt Moobidesk's omnichannel engagement solution</h2>
                 <div className="flex flex-col lg:flex-row items-center my-20">
@@ -137,11 +137,11 @@ export default function Homepage() {
                     </div>
                 </div>
                 </div>
-                <div className="power-simplicity container mx-auto px-8 mt-48">
+                <div className="power-simplicity container mx-auto px-8 mt-20 lg:mt-48">
                     <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">Features</h5>
                     <h2 className="text-3xl text-center font-bold text-gray-800 max-w-2xl mx-auto">Key features of Moobidesk Enterprise</h2>
                     <p className="mt-4 max-w-xl leading-relaxed text-gray-400 mx-auto text-center">Learn how Moobidesk makes your agents’ lives easier, your contact center more efficient, and your customers happier</p>
-                    <div className="flex flex-col-reverse lg:flex-row items-center my-20">
+                    <div className="flex flex-col-reverse lg:flex-row items-center my-8 lg:my-20">
                         <div className="w-full lg:w-1/2 py-6">
                             <h3 className="text-xl text-green font-bold">UNIFIED VOICE & CHAT CHANNELS</h3>
                             <h2 className="text-2xl text-gray-800 font-bold mt-2">A TRULY CONNECTED CUSTOMER EXPERIENCE.</h2>
@@ -153,7 +153,7 @@ export default function Homepage() {
                             <img src={KeyFeatures1} alt="" width="600" />
                         </div>
                     </div>
-                    <div className="flex flex-col lg:flex-row items-center my-20">
+                    <div className="flex flex-col lg:flex-row items-center my-8 lg:my-20">
                         <div className="w-full lg:w-1/2 py-6">
                             <img src={KeyFeatures2} alt="" width="600" />
                         </div>
@@ -165,7 +165,7 @@ export default function Homepage() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col-reverse lg:flex-row items-center my-20">
+                    <div className="flex flex-col-reverse lg:flex-row items-center my-8 lg:my-20">
                         <div className="w-full lg:w-1/2 py-6">
                             <h3 className="text-xl text-green font-bold">CUSTOMIZABLE WORKFLOW</h3>
                             <h2 className="text-2xl text-gray-800 font-bold mt-2">EFFORTLESS TO SETUP. TWEAK ANYTIME.</h2>
@@ -177,7 +177,7 @@ export default function Homepage() {
                             <img src={KeyFeatures3} alt="" width="600" />
                         </div>
                     </div>
-                    <div className="flex flex-col lg:flex-row items-center my-20">
+                    <div className="flex flex-col lg:flex-row items-center my-8 lg:my-20">
                         <div className="w-full lg:w-1/2 py-6">
                             <img src={KeyFeatures4} alt="" width="600" />
                         </div>
@@ -217,7 +217,7 @@ export default function Homepage() {
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">An individual customer’s data from any channel they have used is automatically stored on the same interface and database. It makes the customer experience a great one, as it eliminates the need for the customer to repeat information that has been mentioned before.</p>
                         </div>
                     </div>
-                    <div className="mt-10 flex flex-col lg:flex-row">
+                    <div className="mt-2 lg:mt-10 flex flex-col lg:flex-row">
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon4 />
                             <h2 className="text-xl my-2 text-white font-bold mt-4">Significant cost savings</h2>
@@ -235,7 +235,7 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-32">
+                <div className="my-32">
                     <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center px-8">
                         <div className="w-full lg:w-1/2">
                         <h2 className="text-gray-800 font-bold text-3xl max-w-lg leading-normal mb-4">Why organisations choose Moobidesk</h2>
@@ -243,11 +243,11 @@ export default function Homepage() {
                         <p className="text-xl font-bold text-gray-800 max-w-xl">Moobidesk is an intuitive modern helpdesk that empowers all to drive desired business outcomes and boost sales faster and easier than ever before.</p>
                         </div>
                         <div className="w-full lg:w-1/2">
-                        <img src={WhyChoose} alt="" />
+                        <   img src={WhyChoose} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto px-8 my-20">
+                <div className="container mx-auto px-8 my-10 lg:my-20">
                     <div className="absolute -left-80 xl:-left-10 -mt-24 lg:-mt-36" style={{zIndex: -10}}>
                         <Blob/>
                     </div>
@@ -258,7 +258,7 @@ export default function Homepage() {
                     </p>
                     <div className="flex flex-col lg:flex-row items-center px-8 mt-28">
                         <div className="w-full lg:w-1/2">
-                        <img src={SfExpress} alt="" className="mt-5" width="500" />
+                        <img src={SfExpress} alt="" className="mt-0 lg:mt-5" width="500" />
                         </div>
                         <div className="w-full lg:w-1/2">
                         <p className="my-6 text-gray-800 text-lg font-normal leading-relaxed text-center">
@@ -276,7 +276,7 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto mt-16 lg:mt-36">
+                <div className="container mx-auto mt-2 lg:mt-36">
                     <div className="container mx-auto text-center" style={{backgroundImage: "url("+ announcement +")", height: 800, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain'}}>
                         <div className="px-28 pt-80">
                         <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">GET A CONSULTATION</h5>
