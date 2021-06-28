@@ -190,10 +190,10 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-yellow-400 h-52 py-10">
+                <div className="bg-yellow-400 h-44 lg:h-52 py-10">
                 <div className="container mx-auto text-center">
-                    <h2 className="text-white font-bold text-2xl lg:text-3xl mb-4 lg:mb-8">Available in the cloud, on premises, or hybrid cloud</h2>
-                    <button className="bg-green py-4 px-8 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200">Contact Us</button>
+                    <h2 className="text-white font-bold text-xl lg:text-3xl mb-4 lg:mb-8">Available in the cloud, on premises, or hybrid cloud</h2>
+                    <button className="bg-green py-2 lg:py-4 px-6 lg:px-8 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200">Contact Us</button>
                 </div>
                 </div>
                 <div className="container mx-auto px-8 mt-20">
@@ -203,34 +203,34 @@ export default function Homepage() {
                     <div className="mt-10 flex flex-col lg:flex-row">
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon1 />
-                            <h2 className="text-xl my-2 text-white font-bold mt-4">Improved agent efficiency and experience</h2>
+                            <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Improved agent efficiency and experience</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">With the integration of multiple channels into one contact center platform, your customer service agents can create consumer-centric experiences and keep track of customer information and respond to customer queries across channels quickly, accurately and easily.</p>
                         </div>
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon2 />
-                            <h2 className="text-xl my-2 text-white font-bold mt-4">Reduce average handling time</h2>
+                            <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Reduce average handling time</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">A fast response makes customers feel important. Moobidesk Enterprise contact center solution analyses the incoming message and automatically suggests the best responses to the agents, removing the potential for human error and allowing agents to focus on assisting customers and respond quickly to customer issues.</p>
                         </div>
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon3 />
-                            <h2 className="text-xl my-2 text-white font-bold mt-4">Improved agent efficiency and experience</h2>
+                            <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Improved agent efficiency and experience</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">An individual customer’s data from any channel they have used is automatically stored on the same interface and database. It makes the customer experience a great one, as it eliminates the need for the customer to repeat information that has been mentioned before.</p>
                         </div>
                     </div>
                     <div className="mt-2 lg:mt-10 flex flex-col lg:flex-row">
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon4 />
-                            <h2 className="text-xl my-2 text-white font-bold mt-4">Significant cost savings</h2>
+                            <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Significant cost savings</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">Moobidesk bot can help you to save on customer service costs by speeding up response times, freeing up agents for more challenging work, and answering up to 80% of routine questions.</p>
                         </div>
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon5 />
-                            <h2 className="text-xl my-2 text-white font-bold mt-4">High levels of scalablilty, reliablility and availablity</h2>
+                            <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">High levels of scalablilty, reliablility and availablity</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">Moobidesk Enterprise is a cloud contact center software built on a highly secure, scalable infrastructure and our elasticity allows you to seamlessly grow from 50 agents to 200 agents instantly.</p>
                         </div>
                         <div className="w-full lg:w-1/3 bg-green px-4 py-8 flex flex-col items-center rounded-xl mx-2 mb-4 lg:mb-0">
                             <BenefitsIcon6 />
-                            <h2 className="text-xl my-2 text-white font-bold mt-4">Improved agent efficiency and experience</h2>
+                            <h2 className="text-xl my-2 text-white font-bold mt-4 text-center">Improved agent efficiency and experience</h2>
                             <p className="text-base text-center pb-10 my-2 text-white leading-relaxed">By streamlining and automating your support process means fewer repeat calls, shorter call times, and quick problem resolution, all contributing to increased support efficiency and the lowering of customer care costs.</p>
                         </div>
                     </div>
@@ -281,7 +281,7 @@ export default function Homepage() {
                         <div className="px-28 pt-80">
                         <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">GET A CONSULTATION</h5>
                         <h2 className="text-center text-xl lg:text-3xl max-w-md mx-auto font-bold text-white mt-4">Experience the most innovative and affordable cloud contact center software today</h2>
-                        <button className="bg-green py-4 px-8 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200 mt-8">Contact Us</button>
+                        <button className="mt-8 bg-green py-2 lg:py-4 px-6 lg:px-8 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200">Contact Us</button>
                         </div>
                     </div>
                 </div>
