@@ -20,7 +20,8 @@ import imageJumbotronHomepage from '../assets/images/img_jumbotron_homepage.png'
 import imageSection3Homepage from '../assets/images/section-3.png';
 import WhyChoose from '../assets/images/why-choose.png';
 import SfExpress from '../assets/images/logo-sfexpress.png';
-import announcement from '../assets/images/announcement.png';
+
+import Announcement from '../components/Announcement';
 
 import client1 from '../assets/images/client-1.png';
 import client2 from '../assets/images/client-2.png';
@@ -97,12 +98,12 @@ export default function Homepage() {
                     </div>
                 </div>
                 </div>
-                <div className="power-simplicity container mx-auto px-8 mt-24 lg:mt-48">
+                <div className="power-simplicity container mx-auto px-8 mt-24 md:mt-48">
                 <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">Engagement Solution</h5>
                 <h2 className="text-3xl text-center font-bold text-gray-800 max-w-2xl mx-auto">Why successful businesses adopt Moobidesk's omnichannel engagement solution</h2>
-                <div className="flex flex-col lg:flex-row items-center my-20">
-                    <div className="w-full lg:w-1/3 pb-6">
-                        <div className="flex items-center justify-start lg:justify-center">
+                <div className="flex flex-col md:flex-row items-center my-20">
+                    <div className="w-full md:w-1/3 pb-6">
+                        <div className="flex items-center justify-start md:justify-center">
                             <div className="pr-4">
                                 <Increase />
                                 </div>
@@ -112,8 +113,8 @@ export default function Homepage() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/3 pb-6">
-                        <div className="flex items-center justify-start lg:justify-center">
+                    <div className="w-full md:w-1/3 pb-6">
+                        <div className="flex items-center justify-start md:justify-center">
                             <div className="pr-4">
                                 <HigherCustomer/>
                                 </div>
@@ -123,8 +124,8 @@ export default function Homepage() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/3 pb-6">
-                        <div className="flex items-center justify-start lg:justify-center">
+                    <div className="w-full md:w-1/3 pb-6">
+                        <div className="flex items-center justify-start md:justify-center">
                             <div className="pr-4">
                                 <CustomerRate/>
                                 </div>
@@ -242,7 +243,7 @@ export default function Homepage() {
                         <p className="text-xl font-bold text-gray-800 max-w-xl">Moobidesk is an intuitive modern helpdesk that empowers all to drive desired business outcomes and boost sales faster and easier than ever before.</p>
                         </div>
                         <div className="w-full lg:w-1/2">
-                        <   img src={WhyChoose} alt="" />
+                        <img src={WhyChoose} alt="" />
                         </div>
                     </div>
                 </div>
@@ -275,15 +276,7 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto mt-2 lg:mt-36">
-                    <div className="container mx-auto text-center" style={{backgroundImage: "url("+ announcement +")", height: 800, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain'}}>
-                        <div className="px-28 pt-80">
-                        <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">GET A CONSULTATION</h5>
-                        <h2 className="text-center text-xl lg:text-3xl max-w-md mx-auto font-bold text-white mt-4">Experience the most innovative and affordable cloud contact center software today</h2>
-                        <button className="mt-8 bg-green py-2 lg:py-4 px-6 lg:px-8 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200">Contact Us</button>
-                        </div>
-                    </div>
-                </div>
+                <Announcement title="Experience the most innovative and affordable cloud contact center software today" />
             </main>
         </div>
     )

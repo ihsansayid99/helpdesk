@@ -8,15 +8,15 @@ export default function Footer() {
             <footer className="container mx-auto">
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-full lg:w-1/3 px-8">
-                        <img src={logoHelpdesk} alt="" width="300" />
+                        <img src={logoHelpdesk} alt="" width="250" />
                         <h2 className="text-gray-400 leading-relaxed mt-4 text-lg tracking-wide">
                             HelpDesk making businesses flow as we empower and automate your sales through technology and education.
                         </h2>
                         <div className="flex flex-row items-center mt-6">
-                            <Link to="/z" className="mr-4"><i class="fab fa-facebook-square text-4xl text-green"></i></Link>
-                            <Link to="/" className="mr-4"><i class="fab fa-instagram text-4xl text-green"></i></Link>
-                            <Link to="/" className="mr-4"><i class="fab fa-twitter text-4xl text-green"></i></Link>
-                            <Link to="/" className="mr-4"><i class="fab fa-linkedin text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-facebook-square text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-instagram text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-twitter text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-linkedin text-4xl text-green"></i></Link>
                         </div>
                     </div>
                     <div className="w-full px-8 lg:w-1/3">
@@ -29,11 +29,11 @@ export default function Footer() {
                         <form action="#" className="mt-6">
                             <div className="flex items-center mb-4">
                                 <label htmlFor="name" className="text-xl text-green font-bold mr-8">Name <span className="text-red-400">*</span></label>
-                                <input type="text" className="border-t-0 border-b-2 border-green px-2 py-2 rounded focus:outline-none focus:bg-gray-500 transition-all duration-300 text-gray-800 text-lg tracking-wide"/>
+                                <input type="text" className="form_input_helpdesk"/>
                             </div>
                             <div className="flex items-center">
                                 <label htmlFor="email" className="text-xl text-green font-bold mr-8">Email <span className="text-red-400">*</span></label>
-                                <input type="email" className="border-t-0 border-b-2 border-green px-2 py-2 rounded focus:outline-none focus:bg-gray-500 transition-all duration-300 text-gray-800 text-lg tracking-wide"/>
+                                <input type="email" className="form_input_helpdesk"/>
                             </div>
                             <div className="text-center mt-8">
                                 <button className="px-4 py-2 rounded-3xl text-white bg-green hover:bg-green-600 transition-all duration-200">Subscribe</button>
@@ -52,13 +52,13 @@ export default function Footer() {
                                     <Link to="/success-stories" className="link_hover_border_bottom">SUCCESS STORIES</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">CONTACT</Link>
+                                    <Link to="/contact" className="link_hover_border_bottom">CONTACT</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">PRIVACY POLICY</Link>
+                                    <Link to="/privay-policy" className="link_hover_border_bottom">PRIVACY POLICY</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">TERM OF SERVICE</Link>
+                                    <Link to="/term-of-services" className="link_hover_border_bottom">TERM OF SERVICE</Link>
                                 </li>
                                 <li className="mb-2">
                                     <Link to="/" className="link_hover_border_bottom">CRM</Link>
@@ -70,7 +70,7 @@ export default function Footer() {
                                     <Link to="/" className="link_hover_border_bottom">TRAINING</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">USER GUIDE</Link>
+                                    <Link to="/partners" className="link_hover_border_bottom">PARTNERS</Link>
                                 </li>
                             </ul>
                     </div>

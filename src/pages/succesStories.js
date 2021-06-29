@@ -4,7 +4,7 @@ import wave2 from '../assets/images/wave2.png';
 import TheNextLevel from '../assets/images/the-next-level-ss.jpg'
 import TechJDI from '../assets/images/tech-jdi.jpg'
 import MasonCO from '../assets/images/mason-and-co.jpg'
-import announcement from '../assets/images/announcement.png';
+import Announcement from '../components/Announcement';
 
 export default function succesStories() {
     return (
@@ -43,19 +43,8 @@ export default function succesStories() {
                         </p>
                     </div>
                 </div>
-                <div className="container mx-auto mt-2 lg:mt-36">
-                    <div className="container mx-auto text-center" style={{backgroundImage: "url("+ announcement +")", height: 800, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'contain'}}>
-                        <div className="px-28 pt-80">
-                        <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">GET A CONSULTATION</h5>
-                        <h2 className="text-center text-xl lg:text-3xl max-w-sm mx-auto font-bold text-white mt-4">supercharge your sales today</h2>
-                        <p className="text-center max-w-md mx-auto mt-3 text-white text-lg">
-                            Understand how you can Achieve 3× your Sales Revenue by Optimizing your Sales Process with Digital Tools or our Digital Sales Transformation Programme!
-                        </p>
-                        <button className="mt-8 bg-green py-2 lg:py-4 px-10 lg:px-14 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200">Contact us for free consultation</button>
-                        </div>
-                    </div>
-                </div>
             </div>
+                <Announcement title="supercharge your sales today" content="Understand how you can Achieve 3× your Sales Revenue by Optimizing your Sales Process with Digital Tools or our Digital Sales Transformation Programme!" />
         </div>
     )
 }

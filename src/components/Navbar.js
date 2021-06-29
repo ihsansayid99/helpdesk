@@ -7,12 +7,12 @@ export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
     return (
         <div>
-            <div className={['sidebar fixed right-0 h-full min-h-full min-w-full bg-white py-12 w-full px-10 lg:px-52 transition-opacity duration-300', isOpen ? 'is-open z-30' : 'is-fadeout'].join(" ")}>
+            <div className={['sidebar fixed right-0 h-full min-h-full min-w-full bg-white py-12 w-full px-10 lg:px-52 transition-opacity duration-300 overflow-auto', isOpen ? 'is-open z-20' : 'is-fadeout'].join(" ")}>
                 <div className="sidebar_head flex justify-between items-center">
                     <div className="sidebar__brand">
                         <img src={logoHelpdesk} className="w-48 md:w-60" alt="Helpdesk Logo" />
                     </div>
-                    <div className="sidebar__hamburger px-6 lg:px-14 -mt-11 lg:-mt-4 fixed lg:right-64 right-0">
+                    <div className="sidebar__hamburger px-6 lg:px-14 -mt-11 lg:-mt-4 fixed lg:-right-4 xl:right-12 2xl:right-40 right-0">
                         <Hamburger toggled={isOpen} toggle={setOpen} direction="left" color="#000" label="Show Bigger Menu"/>
                     </div>
                 </div>
@@ -37,10 +37,10 @@ export default function Navbar() {
                                 <p className="text-gray-400 text-sm lg:text-lg mt-2 leading-relaxed">Upskill your employee into digital sales professional to drive more sales for you!</p>
                         </div>
                         <div className="sidebar__menu_social flex flex-row items-center mt-8">
-                            <Link to="/" className="mr-4"><i class="fab fa-facebook-square text-4xl text-green"></i></Link>
-                            <Link to="/" className="mr-4"><i class="fab fa-instagram text-4xl text-green"></i></Link>
-                            <Link to="/" className="mr-4"><i class="fab fa-twitter text-4xl text-green"></i></Link>
-                            <Link to="/" className="mr-4"><i class="fab fa-linkedin text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-facebook-square text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-instagram text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-twitter text-4xl text-green"></i></Link>
+                            <Link to="/" className="mr-4"><i className="fab fa-linkedin text-4xl text-green"></i></Link>
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2">
@@ -59,7 +59,7 @@ export default function Navbar() {
                                         <Link to="/" className="link_hover_border_bottom_transition_border">blog</Link>
                                     </li>
                                     <li className="mb-4">
-                                        <Link to="/" className="link_hover_border_bottom_transition_border">contact</Link>
+                                        <Link to="/contact" className="link_hover_border_bottom_transition_border">contact</Link>
                                     </li>
                                 </ul>
                         </div>

@@ -34,17 +34,46 @@
     transition: visibility 0s ease-out 0s, opacity 300ms;
 }
 
-/* text utils */
+/* utils */
+
 .text-underline-bold{
-    @apply border-b-8 border-green;
-}
-.name-with-underline-full{
     display: inline-block !important;
 }
-.name-with-underline-full::after{
+.text-underline-bold::after{
     content: '';
     display: block !important;
-    margin-top: -15px;
+    margin-top: -10px;
     height: 12px;
     @apply bg-green;
 }
+
+.form_input_helpdesk{
+    @apply border-t-0 border-b-2 border-green px-2 py-2 rounded focus:outline-none focus:bg-gray-500 transition-all duration-300 text-gray-800 text-lg tracking-wide;
+}
+.contact__form_control{
+    @apply my-4 flex flex-col;
+}
+
+/* Announcement Responsive */
+.announcement{
+    @apply w-10/12 lg:w-8/12 mx-auto lg:max-w-2xl xl:max-w-3xl relative text-center;
+    height: 800px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+/* Responsive (opt)*/
+
+/* Small */
+@media all and (max-width: 480px){ 
+    .announcement{
+        height: 300px;
+    }
+}
+  
+@media all and (min-width: 480px) and (max-width: 768px) { }
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+ 
