@@ -28,8 +28,8 @@ export default function Contact() {
                 </div>
                 <div className="w-full lg:w-1/2">
                     <div className="">
-                        <h5 className="text-sm tracking-wide text-green font-bold">ABOUT US</h5>
-                        <h2 className="text-3xl lg:text-4xl leading-snug font-bold">
+                        <h5 className="text-sm tracking-wide text-green font-bold">CONTACT US</h5>
+                        <h2 className="text-3xl lg:text-4xl font-bold">
                             lets make your <span className="text-underline-bold">business</span> <br /> flow with sales
                         </h2>
                         <p className="text-gray-400 mt-3">Email : <span className="text-green font-semibold">contact@helpdesk.io</span></p>

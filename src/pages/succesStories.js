@@ -23,21 +23,21 @@ export default function succesStories() {
                 <div className="container mx-auto flex flex-col lg:flex-row mt-20 lg:mt-32">
                     <div className="happy_client w-full lg:w-1/3 mb-10 lg:mb-0">
                         <img src={TheNextLevel} alt="" className="w-full lg:w-11/12" />
-                        <b className="name-with-underline-full mt-2 text-gray-800">The Next Level</b>
+                        <b className="text-underline-bold mt-2 text-gray-800">The Next Level</b>
                         <p className="text-sm lg:text-lg text-gray-400 mt-2 leading-relaxed">
                             The Next Level provides webinars and seminars for help entrepreneurs in taking their businesses to the next level
                         </p>
                     </div>
                     <div className="happy_client w-full lg:w-1/3 mb-10 lg:mb-0">
                         <img src={TechJDI} alt="" className="w-full lg:w-11/12" />
-                        <b className="name-with-underline-full mt-2 text-gray-800">Tech JDI Ltd</b>
+                        <b className="text-underline-bold mt-2 text-gray-800">Tech JDI Ltd</b>
                         <p className="text-sm lg:text-lg text-gray-400 mt-2 leading-relaxed">
                             Tech JDI helps start-ups and corporates to swiftly access the resources in the market across Asia.
                         </p>
                     </div>
                     <div className="happy_client w-full lg:w-1/3 mb-10 lg:mb-0">
                         <img src={MasonCO} alt="" className="w-full lg:w-11/12" />
-                        <b className="name-with-underline-full mt-2 text-gray-800">Mason & Co</b>
+                        <b className="text-underline-bold mt-2 text-gray-800">Mason & Co</b>
                         <p className="text-sm lg:text-lg text-gray-400 mt-2 leading-relaxed">
                             Mason & Co is an Executive Search and Consultancy firm that delivers excellence in the assessment and coaching fields.
                         </p>

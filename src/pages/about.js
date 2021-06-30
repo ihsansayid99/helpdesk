@@ -17,7 +17,7 @@ export default function About() {
                     </div>
                     <div className="w-full lg:w-1/2 pl-0 lg:pl-24">
                         <h5 className="text-base tracking-wide text-green font-bold mb-2">ABOUT US</h5>
-                        <h1 className="text-3xl lg:text-4xl font-bold leading-relaxed max-w-lg">helping businesses & professionals achieve more sales through <span className="text-underline-bold">education</span> & <span className="text-underline-bold">technology</span></h1>
+                        <h1 className="text-3xl lg:text-4xl font-bold max-w-lg">helping businesses & professionals achieve more sales through <span className="text-underline-bold">education</span> & <span className="text-underline-bold">technology</span></h1>
                     </div>
                     <div className="w-full lg:w-1/2">
                         <img src={CharmainTanImage} alt="Charmain tan" />
@@ -26,7 +26,7 @@ export default function About() {
                 <div className="container mx-auto px-12 lg:px-20 mt-32 lg:mt-36">
                     <div className="w-full lg:w-1/2 mx-auto">
                         <h5 className="text-base tracking-wide text-green font-bold mb-2">ABOUT QUICKDESK</h5>
-                        <h1 className="text-3xl lg:text-4xl font-bold leading-relaxed max-w-2xl"><span className="text-underline-bold">empower</span> businesses to drive more sales through technology and education</h1>
+                        <h1 className="text-3xl lg:text-4xl font-bold max-w-2xl"><span className="text-underline-bold">empower</span> businesses to drive more sales through technology and education</h1>
                         <p className="text-base lg:text-lg text-gray-400 mt-6">
                             At QuickDesk, we seek to empower businesses to drive more sales through technology and education.
                         </p>
