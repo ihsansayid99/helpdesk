@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
 .link_hover_border_bottom:hover{
     @apply border-b-2;
 }

@@ -19,28 +19,11 @@ import {ReactComponent as BenefitsIcon6} from '../assets/images/icon-benefits-6.
 import imageJumbotronHomepage from '../assets/images/img_jumbotron_homepage.png';
 import imageSection3Homepage from '../assets/images/section-3.png';
 import WhyChoose from '../assets/images/why-choose.png';
-import SfExpress from '../assets/images/logo-sfexpress.png';
-
-import Announcement from '../components/Announcement';
-
-import client1 from '../assets/images/client-1.png';
-import client2 from '../assets/images/client-2.png';
-import client3 from '../assets/images/client-3.png';
-import client4 from '../assets/images/client-4.png';
-import client5 from '../assets/images/client-5.png';
-import client6 from '../assets/images/client-6.png';
-import client9 from '../assets/images/client-9.png';
-import client10 from '../assets/images/client-10.png';
-import client11 from '../assets/images/client-11.png';
-import client12 from '../assets/images/client-12.png';
-import client13 from '../assets/images/client-13.png';
-import client14 from '../assets/images/client-14.png';
-import client15 from '../assets/images/client-15.png';
 
 export default function Homepage() {
     return (
         <div>
-            <main className="z-50 pt-32">
+            <main className="z-50 pt-80">
                 <div className="jumbotron_homepage flex flex-col-reverse lg:flex-row items-center container mx-auto px-12 lg:px-20">
                 <div className="w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 absolute top-0 right-0" style={{zIndex: -10}}>
                     <img src={wave1} alt="Wave one" draggable="false" />
@@ -56,29 +39,7 @@ export default function Homepage() {
                     <img src={imageJumbotronHomepage} alt="Jumbtron homepage images" className="w-full xl:w-3/4 mt-2 lg:-mt-32" />
                 </div>
                 </div>
-                <div className="our-client my-20 ">
-                <h5 className="text-base tracking-wide text-green font-bold text-center mb-8">Our Client</h5>
-                <div className="our-client__image container mx-auto flex flex-row lg:flex-col">
-                    <div className="w-1/2 flex flex-col lg:flex-row justify-center mx-auto mb-8">
-                    <img src={client1} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client2} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client3} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client4} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client5} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client6} alt="" className="w-24 mx-auto lg:mx-8 my-4"  />
-                    </div>
-                    <div className="w-1/2 flex flex-col lg:flex-row justify-center mx-auto">
-                    <img src={client9} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client10} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client11} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client12} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client13} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client14} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    <img src={client15} alt="" className="w-24 mx-auto lg:mx-8 my-4" />
-                    </div>
-                </div>
-                </div>
-                <div className="power-simplicity container mx-auto px-8 my-20">
+                <div className="power-simplicity container mx-auto px-8 my-28">
                 <div className="absolute -left-80 xl:-left-10 mt-44 lg:mt-20" style={{zIndex: -10}}>
                     <Blob/>
                 </div>
@@ -108,7 +69,7 @@ export default function Homepage() {
                                 <Increase />
                                 </div>
                                 <div className="">
-                                <h3 className="text-3xl text-green font-bold">10%</h3>
+                                <h3 className="text-3xl text-green font-bold">30%</h3>
                                 <p className="text-gray-400">Increase in sales revenue</p>
                             </div>
                         </div>
@@ -119,7 +80,7 @@ export default function Homepage() {
                                 <HigherCustomer/>
                                 </div>
                                 <div className="">
-                                <h3 className="text-3xl text-green font-bold">23%</h3>
+                                <h3 className="text-3xl text-green font-bold">40%</h3>
                                 <p className="text-gray-400">Higher customer satisfaction score</p>
                             </div>
                         </div>
@@ -130,14 +91,14 @@ export default function Homepage() {
                                 <CustomerRate/>
                                 </div>
                                 <div className="">
-                                    <h3 className="text-3xl text-green font-bold">89%</h3>
+                                    <h3 className="text-3xl text-green font-bold">80%</h3>
                                 <p className="text-gray-400">Customer retention rate</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 </div>
-                <div className="power-simplicity container mx-auto px-8 mt-20 lg:mt-48">
+                <div className="power-simplicity container mx-auto px-8 mt-20 lg:mt-48" id="features">
                     <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">Features</h5>
                     <h2 className="text-3xl text-center font-bold text-gray-800 max-w-2xl mx-auto">Key features of Moobidesk Enterprise</h2>
                     <p className="mt-4 max-w-xl leading-relaxed text-gray-400 mx-auto text-center">Learn how Moobidesk makes your agents’ lives easier, your contact center more efficient, and your customers happier</p>
@@ -196,7 +157,7 @@ export default function Homepage() {
                     <button className="bg-green py-2 lg:py-4 px-6 lg:px-8 text-base lg:text-lg text-white rounded-3xl hover:bg-green-600 transition-all duration-200">Contact Us</button>
                 </div>
                 </div>
-                <div className="container mx-auto px-8 mt-20">
+                <div className="container mx-auto px-8 mt-20" id="benefits">
                     <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">Benefits</h5>
                     <h2 className="text-3xl text-center font-bold text-gray-800 max-w-2xl mx-auto">Benefits of Moobidesk</h2>
                     <p className="mt-4 max-w-xl leading-relaxed text-gray-400 mx-auto text-center">What you can expect from our contact center and engagement platform</p>
@@ -247,36 +208,7 @@ export default function Homepage() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto px-8 my-10 lg:my-20">
-                    <div className="absolute -left-80 xl:-left-10 -mt-24 lg:-mt-36" style={{zIndex: -10}}>
-                        <Blob/>
-                    </div>
-                    <h5 className="text-base tracking-wide text-green font-bold text-center mb-2">WHAT OUR CLIENTS HAVE TO SAY</h5>
-                    <h2 className="text-3xl text-center font-bold text-gray-800">Over 900 businesses automated their sales & marketing with us</h2>
-                    <p className="text-center my-2 mx-auto max-w-4xl text-gray-400 leading-relaxed">
-                        We care about your success and it's our mission to grow and to walk through the journey with you.
-                    </p>
-                    <div className="flex flex-col lg:flex-row items-center px-8 mt-28">
-                        <div className="w-full lg:w-1/2">
-                        <img src={SfExpress} alt="" className="mt-0 lg:mt-5" width="500" />
-                        </div>
-                        <div className="w-full lg:w-1/2">
-                        <p className="my-6 text-gray-800 text-lg font-normal leading-relaxed text-center">
-                            “Since we’ve started with Moobidesk Enterprise, communicating and coordinating with customers has become far less time-consuming. The unified contact center platform has saved us the hassle of shuffling between separate systems, and enabled us to connect with our customers with new additional channels.
-                        </p>
-                        <p className="my-6 text-gray-800 text-lg font-normal leading-relaxed text-center">
-                            This has greatly increased our team’s productivity, giving us time to focus on providing our customers with the best experience they can get.”
-                        </p>
-                        <p className="text-base tracking-wide text-green font-bold mb-2">
-                            Maria Chua
-                        </p>
-                        <p className="text-base tracking-wide text-green font-bold mb-2">
-                        Customer Support Manager
-                        </p>
-                        </div>
-                    </div>
-                </div>
-                <Announcement title="Experience the most innovative and affordable cloud contact center software today" />
+                
             </main>
         </div>
     )

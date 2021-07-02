@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/about" component={About}/>
           <Route exact path="/success-stories" component={SuccesStories}/>
           <Route exact path="/contact" component={Contact}/>
-          <Route exact path="/privay-policy" component={PrivacyPolicy}/>
+          <Route exact path="/privacy-policy" component={PrivacyPolicy}/>
           <Route exact path="/term-of-services" component={TOService}/>
           <Route exact path="/partners" component={Partners}/>
         </Switch>

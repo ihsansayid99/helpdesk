@@ -5,7 +5,7 @@ import wave2 from '../assets/images/wave2.png';
 export default function tos() {
     return (
         <div>
-            <div className="container mx-auto">
+            <div className="container mx-auto pt-44">
             <div className="w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 absolute top-0 right-0" style={{zIndex: -10}}>
                 <img src={wave1} alt="Wave one" draggable="false" />
             </div>

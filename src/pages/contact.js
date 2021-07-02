@@ -22,11 +22,11 @@ export default function Contact() {
     }
     return (
         <div>
-            <div className="container items-center mx-auto flex flex-col lg:flex-row px-8 mb-40 lg:px-24">
+            <div className="container items-center mx-auto flex flex-col lg:flex-row px-8 mb-40 lg:px-24 pt-44">
                 <div className="w-8/12 md:w-6/12 lg:w-4/12 xl:w-5/12 absolute top-0 right-0" style={{zIndex: -10}}>
                     <img src={wave1} alt="Wave one" draggable="false" />
                 </div>
-                <div className="w-full lg:w-1/2">
+                <div className="contact w-full lg:w-1/2 px-0 lg:px-8 mx-auto">
                     <div className="">
                         <h5 className="text-sm tracking-wide text-green font-bold">CONTACT US</h5>
                         <h2 className="text-3xl lg:text-4xl font-bold">
@@ -48,9 +48,7 @@ export default function Contact() {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="contact w-full lg:w-1/2">
-                    <div className="contact__steps px-6 py-16 w-full lg:w-9/12 bg-white rounded-2xl">
+                    <div className="contact__steps px-6 py-16 w-full bg-white rounded-2xl">
                         <h5 className="text-sm text-gray-400 font-bold">Step 1 of 2</h5>
                         <div className="shadow w-full bg-gray-100 px-2 py-2 my-2 rounded-2xl">
                             <div className="shadow w-full bg-gray-200 rounded-2xl border-2 border-gray-100">
