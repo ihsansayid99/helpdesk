@@ -9,13 +9,13 @@ export default function Footer() {
                 <div className="flex flex-col lg:flex-row justify-center">
                     <div className="flex flex-row w-full">
                         <div className="w-1/2 px-8 border-gray-50 border-r-2 text-center lg:text-left">
-                            <img src={logoHalodesk} alt="" width="150" />
+                            <img src={logoHalodesk} alt="" width="150" className="mx-auto lg:mx-0" />
                             <ul className="mt-6 text-xs lg:text-sm leading-loose text-gray-300 px-0 lg:px-3">
                                 <li className="mb-2">
-                                    <NavLink to="/about" className="link_hover_border_bottom">FEATURES</NavLink>
+                                    <NavLink to="/#features" className="link_hover_border_bottom">FEATURES</NavLink>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">BENEFITS</Link>
+                                    <Link to="/#benefits" className="link_hover_border_bottom">BENEFITS</Link>
                                 </li>
                                 <li className="mb-2">
                                     <Link to="/contact" className="link_hover_border_bottom">CONTACT</Link>
@@ -26,16 +26,16 @@ export default function Footer() {
                             <h2 className="text-base lg:text-xl font-bold text-gray-800 mt-3">Features</h2>
                             <ul className="mt-6 text-sm lg:text-base text-gray-300">
                                 <li className="mb-2">
-                                    <NavLink to="/about" className="link_hover_border_bottom">Feature 1</NavLink>
+                                    <NavLink to="/" className="link_hover_border_bottom">Feature 1</NavLink>
                                 </li>
                                 <li className="mb-2">
                                     <Link to="/" className="link_hover_border_bottom">Feature 2</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/success-stories" className="link_hover_border_bottom">Feature 3</Link>
+                                    <Link to="/" className="link_hover_border_bottom">Feature 3</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/contact" className="link_hover_border_bottom">Feature 4</Link>
+                                    <Link to="/" className="link_hover_border_bottom">Feature 4</Link>
                                 </li>
                             </ul>
                         </div>
@@ -45,16 +45,16 @@ export default function Footer() {
                             <h2 className="text-base lg:text-xl font-bold text-gray-800 mt-3">Benefits</h2>
                             <ul className="mt-6 text-sm lg:text-base text-gray-300">
                                 <li className="mb-2">
-                                    <NavLink to="/about" className="link_hover_border_bottom">Benefits 1</NavLink>
+                                    <NavLink to="/" className="link_hover_border_bottom">Benefits 1</NavLink>
                                 </li>
                                 <li className="mb-2">
                                     <Link to="/" className="link_hover_border_bottom">Benefits 2</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/success-stories" className="link_hover_border_bottom">Benefits 3</Link>
+                                    <Link to="/" className="link_hover_border_bottom">Benefits 3</Link>
                                 </li>
                                 <li className="mb-2">
-                                    <Link to="/contact" className="link_hover_border_bottom">Benefits 4</Link>
+                                    <Link to="/" className="link_hover_border_bottom">Benefits 4</Link>
                                 </li>
                             </ul>
                         </div>

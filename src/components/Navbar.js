@@ -5,7 +5,19 @@ import { Link , useLocation } from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
+    const [navbar, setNavbar] = useState(false)
     const location = useLocation()
+    const changeBackground = () => {
+        if (window.scrollY >= 66) {
+          setNavbar(true)
+        } else {
+          setNavbar(false)
+        }
+      }
+    useEffect(() => {
+        changeBackground()
+        window.addEventListener("scroll", changeBackground)
+    })
     useEffect(() => {
         if(location.hash){
             let elm = document.getElementById(location.hash.slice(1))
@@ -21,11 +33,13 @@ export default function Navbar() {
     }, [location])
     return (
         <div>
-            <header className="z-40 mb-10 lg:mb-22 fixed min-w-full bg-white">
+            <header className={["z-40 mb-10 lg:mb-22 fixed min-w-full transition-colors duration-300", navbar ? "bg-white" : 'bg-transparent'].join(" ")}>
                 <div className="header_wrapper flex items-center justify-between px-2 container mx-auto py-3 lg:py-3">
                     <div className="header_brand-menu flex items-center container">
                         <div className="header__brand pl-4 mr-8">
-                            <img src={logoHalodesk} className="w-52 md:w-60" alt="Helpdesk Logo" />
+                            <Link to="/">
+                                <img src={logoHalodesk} className="w-52 md:w-60" alt="Helpdesk Logo" />
+                            </Link>
                         </div>
                         <div className="header__menu hidden xl:block mx-auto">
                             <ul className="flex text-gray-700  tracking-wide font-medium">

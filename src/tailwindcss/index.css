@@ -57,22 +57,11 @@ html {
     @apply my-4 flex flex-col;
 }
 
-/* Announcement Responsive */
-.announcement{
-    @apply w-10/12 lg:w-8/12 mx-auto lg:max-w-2xl xl:max-w-3xl relative text-center;
-    height: 800px;
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-
 /* Responsive (opt)*/
 
 /* Small */
 @media all and (max-width: 480px){ 
-    .announcement{
-        height: 300px;
-    }
+   
 }
   
 @media all and (min-width: 480px) and (max-width: 768px) { }

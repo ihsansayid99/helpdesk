@@ -23,7 +23,7 @@ import WhyChoose from '../assets/images/why-choose.png';
 export default function Homepage() {
     return (
         <div>
-            <main className="z-50 pt-80">
+            <main className="z-50 pt-52 lg:pt-80">
                 <div className="jumbotron_homepage flex flex-col-reverse lg:flex-row items-center container mx-auto px-12 lg:px-20">
                 <div className="w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 absolute top-0 right-0" style={{zIndex: -10}}>
                     <img src={wave1} alt="Wave one" draggable="false" />
