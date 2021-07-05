@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import logoHalodesk from '../assets/images/logo_halodesk.png';
 
 export default function Footer() {
+    const tahunTerbaru = new Date().getFullYear();
     return (
         <div>
             <footer className="container mx-auto">
-                <div className="flex flex-col lg:flex-row justify-center">
-                    <div className="flex flex-row w-full">
+                <div className="flex flex-col lg:flex-row justify-center items-start lg:items-center">
+                    <div className="flex flex-row w-full items-start lg:items-center">
                         <div className="w-1/2 px-8 border-gray-50 border-r-2 text-center lg:text-left">
                             <img src={logoHalodesk} alt="" width="150" className="mx-auto lg:mx-0" />
                             <ul className="mt-6 text-xs lg:text-sm leading-loose text-gray-300 px-0 lg:px-3">
@@ -23,48 +24,28 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="w-1/2 px-8 text-center lg:text-left">
-                            <h2 className="text-base lg:text-xl font-bold text-gray-800 mt-3">Features</h2>
-                            <ul className="mt-6 text-sm lg:text-base text-gray-300">
-                                <li className="mb-2">
-                                    <NavLink to="/" className="link_hover_border_bottom">Feature 1</NavLink>
-                                </li>
-                                <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">Feature 2</Link>
-                                </li>
-                                <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">Feature 3</Link>
-                                </li>
-                                <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">Feature 4</Link>
-                                </li>
-                            </ul>
+                            <Link to="/#features" className="text-base lg:text-xl font-bold text-gray-800 mt-3">
+                                Features
+                            </Link>
                         </div>
                     </div>
                     <div className="flex flex-row w-full">
                         <div className="w-1/2 px-8 text-center lg:text-left">
-                            <h2 className="text-base lg:text-xl font-bold text-gray-800 mt-3">Benefits</h2>
-                            <ul className="mt-6 text-sm lg:text-base text-gray-300">
-                                <li className="mb-2">
-                                    <NavLink to="/" className="link_hover_border_bottom">Benefits 1</NavLink>
-                                </li>
-                                <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">Benefits 2</Link>
-                                </li>
-                                <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">Benefits 3</Link>
-                                </li>
-                                <li className="mb-2">
-                                    <Link to="/" className="link_hover_border_bottom">Benefits 4</Link>
-                                </li>
-                            </ul>
+                            <Link to="/#benefits" className="text-base lg:text-xl font-bold text-gray-800 mt-3">
+                                Benefits
+                            </Link>
                         </div>
                         <div className="w-1/2 px-8 text-center lg:text-left">
-                            <h2 className="text-base lg:text-xl  font-bold text-gray-800 mt-3">Privacy Policy</h2>
+                            <Link to="/privacy-policy" className="text-base lg:text-xl font-bold text-gray-800 mt-3">
+                                Privacy Policy
+                            </Link>
                         </div>
                     </div>
-                    <div className="flex flex-row w-full">
+                    <div className="flex flex-row w-full mt-6 lg:mt-0">
                         <div className="w-full px-8 text-center lg:text-left">
-                            <h2 className="text-base lg:text-xl  font-bold text-gray-800 mt-3">Term Of Services</h2>
+                            <Link to="/term-of-services" className="text-base lg:text-xl font-bold text-gray-800 mt-3">
+                                Term Of Services
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -90,7 +71,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footer_copyright container mx-auto px-8 py-6 text-gray-400 text-sm lg:text-base">
-                    Copyright © 2020 HaloDesk Pte Ltd. All rights reserved.
+                    Copyright © {tahunTerbaru} HaloDesk Pte Ltd. All rights reserved.
                 </div>
             </footer>
         </div>
